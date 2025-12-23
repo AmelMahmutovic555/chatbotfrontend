@@ -3,7 +3,7 @@ import axios from "axios";
 
 import "./style/ChatBot.css";
 
-const URL = 'https://chatbotbackend-whd0.onrender.com/'
+const URL = 'https://chatbotbackend-whd0.onrender.com'
 
 export default function ChatBot() {
   const [message, setMessage] = useState("");
