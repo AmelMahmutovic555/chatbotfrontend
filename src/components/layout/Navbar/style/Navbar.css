@@ -1,0 +1,42 @@
+#navBar {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  width: 100%;
+}
+
+#navBar > div:first-of-type {
+  margin-left: 1rem;
+}
+
+#navBar > div:first-of-type > * > p {
+  padding: 20px 0;
+  color: white;
+  cursor: pointer;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navBar > div:last-of-type > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#navBar > div:last-of-type > ul > * {
+  padding: 20px 30px;
+  list-style-type: none;
+  flex: 1 1 auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#navBar > div:last-of-type > ul > * > li {
+  text-decoration: none;
+  color: white;
+}

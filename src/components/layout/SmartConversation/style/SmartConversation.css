@@ -1,0 +1,38 @@
+@keyframes appear1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.velocityParent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10rem 0;
+  flex-wrap: wrap;
+  animation-name: appear1;
+  animation-duration: 10s;
+}
+
+.velocityParent > div {
+  border: 1px solid white;
+  padding: 5rem;
+  flex: 1 1 auto;
+  color: white;
+}
+
+.velocityParent > div:first-of-type {
+  background-image: url("/public/velocity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0.1rem;
+  padding: 8.2rem 0;
+  text-align: center;
+}
+
+.velocityParent > div:last-of-type > * {
+  margin-bottom: 1rem;
+}

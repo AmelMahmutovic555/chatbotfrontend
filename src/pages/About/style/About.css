@@ -1,0 +1,112 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.aboutChild1 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.aboutChild {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 80px 20px;
+  gap: 60px;
+}
+
+.about > div {
+  width: 100%;
+  max-width: 900px;
+}
+
+.about > div:first-of-type > h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about p {
+  color: white;
+  line-height: 1.7;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+.aboutChild {
+  width: 100%;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.aboutChild > div:first-of-type p {
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.aboutChild > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.aboutChild > div:last-of-type p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.aboutChild img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.creator {
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 16px;
+    gap: 40px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .aboutChild img {
+    width: 200px;
+    height: 200px;
+  }
+}

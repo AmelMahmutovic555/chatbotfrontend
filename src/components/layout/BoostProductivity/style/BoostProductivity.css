@@ -1,0 +1,72 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.dc {
+  animation-duration: 3s;
+  animation-name: appear;
+}
+
+.dataParent {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.dataParent > div {
+  flex: 1 1 0;
+}
+
+.dataChild {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  align-items: end;
+  justify-items: center;
+  grid-gap: 1rem;
+}
+
+.dataParent > div:first-of-type {
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem;
+}
+
+.dataChild > div {
+  border: 1px solid white;
+  padding: 3rem;
+  min-width: 100%;
+  /* width: 100%; */
+}
+
+.dataParent > div > * {
+  color: white;
+  max-width: 30vw;
+}
+
+@media (max-width: 768px) {
+  .dataParent > div:first-of-type {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dataParent > div:first-of-type > * {
+    max-width: 50vw;
+  }
+
+  .dataChild > div > * {
+    text-align: center;
+  }
+}

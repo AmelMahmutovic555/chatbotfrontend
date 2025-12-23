@@ -1,0 +1,169 @@
+body {
+  position: relative;
+}
+
+.toggleBtn {
+  padding: 10px;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.chatAiSection {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border: 1px solid black;
+  position: fixed;
+  right: 1rem;
+  bottom: 6rem;
+  border-radius: 10px;
+}
+
+.firstAiChild {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.firstAiChild > p:first-of-type {
+  margin-bottom: 10px;
+}
+
+.secondAiChild {
+  height: 40vh;
+  min-width: 17rem;
+  max-width: 21rem;
+  overflow-y: auto;
+  padding-bottom: 1.5rem;
+}
+
+.thirdAiChild {
+  position: relative;
+}
+
+.gif {
+  position: absolute;
+  left: 0.5rem;
+  top: -3.1rem;
+  height: 10px;
+  z-index: 10;
+}
+
+.gif > * {
+  border-radius: 10%;
+}
+
+.thirdAiChild > form {
+  position: sticky;
+  bottom: 1rem;
+}
+
+.thirdAiChild > form > input {
+  padding: 27px 0 27px 10px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  width: 80%;
+  border-bottom-left-radius: 10px;
+}
+
+.thirdAiChild > form > input:focus {
+  outline: none;
+  border: none;
+}
+
+.btnSubmit {
+  padding-top: 19px;
+  padding-bottom: 27px;
+  width: 20%;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+/* ----------------- */
+.chatMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.msgRow {
+  display: flex;
+  position: relative;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.msgRow.right {
+  align-self: flex-end;
+  margin-right: 1rem;
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 60%;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.msgRow.left {
+  padding-left: 1rem;
+  border: 1px solid black;
+  padding: 10px;
+  margin-left: 1rem;
+  max-width: 60%;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.user {
+  position: absolute;
+  top: -23px;
+  right: 0;
+  color: white;
+  font-weight: 900;
+}
+
+.ai {
+  position: absolute;
+  top: -23px;
+  left: 0;
+  color: white;
+  font-weight: 900;
+}
+
+.userTime {
+  position: absolute;
+  bottom: -23px;
+  right: 0;
+  color: white;
+  font-weight: 900;
+}
+
+.aiTime {
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+  color: white;
+  font-weight: 900;
+}
+
+.gif {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
