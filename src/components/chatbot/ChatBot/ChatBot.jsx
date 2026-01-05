@@ -145,6 +145,7 @@ export default function ChatBot() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Write your message..."
+                  required
                 />
 
                 {loading ? (
